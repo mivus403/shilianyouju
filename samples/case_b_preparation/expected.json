@@ -1,0 +1,18 @@
+{
+  "fixture_id": "B",
+  "is_expected_not_model_output": true,
+  "media_kind": "synthetic_schematic",
+  "knowledge_version": "2026-09-22.3",
+  "expected_action": "sit_to_stand",
+  "claim_expectations": [
+    {
+      "id": "B-line-3",
+      "start_seconds": 8.387,
+      "end_seconds": 14.114,
+      "text": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+      "expected_status": "supported_limited",
+      "expected_evidence_ids": ["E04"]
+    }
+  ],
+  "important": "预期仅供人工核对，不得作为模型输入或成功输出。"
+}

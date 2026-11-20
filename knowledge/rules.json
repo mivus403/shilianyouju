@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.1",
+  "version": "2026-09-22.3",
+  "purpose": "主张判定标准与条件规则的文案模板；网页用显式Python分支实现。when为自然语言条件，不使用eval执行。",
+  "supported_actions": ["seated_arm_movement", "sit_to_stand", "supported_calf_raise"],
+  "claim_policy": {
+    "decision_order": ["recognition_needed", "insufficient_if_no_applicable_evidence", "conflicts", "overstated", "supported_limited"],
+    "statuses": {
+      "recognition_needed": "原话、否定范围、说话者立场或与动作的关联不清；先回看/更正。缺少时间不必否定文字，但不伪造定位。",
+      "insufficient": "没有适用于同一主张的依据，或只能找到大类知识却不能证明特定动作、疾病疗效、剂量效果；不等于已证伪。",
+      "conflicts": "原意可靠，且适用资料对同一条件明确给出相反要求；必须说清冲突点并引用。",
+      "overstated": "适用资料已支持该主张的较弱或较窄版本，但视频扩成更大人群、保证程度或期限；必须先证明较弱版本确有依据。",
+      "supported_limited": "同一条件下的有限表述得到支持；不能扩成整段视频正确或个人可以跟练。"
+    },
+    "stance": {
+      "endorsed": "进入主张核查；不要因为原话有害就改成立场反对。",
+      "rejected": "保留原立场和完整否定语义，不对被反对的短语生成指控卡；但反对本身不等于正确。若完整原话提出了可核查的相反建议或纠正主张，核查该完整主张，不因rejected跳过。否定对象或范围不清时先确认。",
+      "quoted_only": "标明这是转述，不归为视频赞成；本版先保留上下文，不直接生成冲突卡。",
+      "unclear": "recognition_needed"
+    },
+    "evidence_match_dimensions": ["人群", "主张针对一般原则还是具体动作", "预期效果或条件", "方向和否定范围", "剂量与时间", "前提和适用限制"],
+    "candidate_coverage": "从claims和cautions中收集可核查的健康说法、效果或条件建议；注意事项不天然正确，不得因落在cautions而漏查。纯画面描述或文件元说明不充当健康主张。",
+    "candidate_traceability": "候选保留完整说法checked_statement以及原始fact_refs（claim或caution的ID）；不要覆盖原text或stance。重复条目合并但保留全部原始引用；语音字幕相矛盾不得合并成单一确定事实。",
+    "required_evidence_statuses": ["supported_limited", "conflicts", "overstated"],
+    "general_principle_boundary": "一般不适、逐步加量、个人条件原则可单独核查；不能借此证明具体动作有效。E06不得用于支持样例A的坐姿手臂动作效果。",
+    "citation_guard": "仅接受本地资料ID；模型不提供可信URL。ID存在仍需检查语义及适用范围；无法确认时降为资料不足，不强配来源。",
+    "correction_guard": "纠正不能超出allowed_statement及其适用范围，不生成个人剂量、替代运动、用药或疾病诊断。",
+    "no_verdict_template": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+    "source_failure": "线上来源临时打不开可展示已核对的本地短摘录及核对日期，明确链接暂不可访问；不得冒充再次联网核实。若来源内容已变化、撤回或适用性出现实质疑问，停用相关卡并标资料待复核。"
+  },
+  "preparation_gates": [
+    "未提交本人/场地信息：尚未检查。video failed：不能据此对动作运行准备规则。",
+    "视频partial只使用已识别且不依赖未处理区段的事实，显示未覆盖范围；complete不代表听全看全。",
+    "动作other或scope unsupported：该动作仅出unsupported范围提示；不为它给执行或替代方案。动作unknown或recognition非clear：先确认。",
+    "混合视频逐动作处理，不能因一个受支持动作替其他动作背书；独立的一般健康说法仍可核查。",
+    "场地图failed只阻断照片分支；已填本人条件可单独提示，并标明场地尚未检查。",
+    "器材必须由用户指定用途并绑定当前照片候选；缺少绑定先确认。看不见不等于没有；原视频器材不作本人器材。",
+    "照片候选和用户声明不一致先显示冲突，请核实；不静默覆盖，不由照片证明承重、稳固或防滑。",
+    "多个规则涉及同一器材时合并文案，保留全部条件缺口和依据；不重复问同一问题。",
+    "完成勾选不改变事实判断；替换输入须重新检查相应卡。没有触发已覆盖规则不等于安全许可。"
+  ],
+  "condition_rules": [
+    {
+      "id": "R01",
+      "name": "当前不适",
+      "actions": ["seated_arm_movement", "sit_to_stand", "supported_calf_raise"],
+      "inputs": ["current_discomfort"],
+      "basis": "health_education_and_user_report",
+      "evidence_ids": ["E08"],
+      "can_mark_done": false,
+      "branches": [
+        {"when": "current_discomfort=yes", "status": "condition_gap", "title": "您填写目前有不适", "suggested_action": "先不要勉强跟练；其他场地事项即使已处理，也不能据此判断可以继续。"},
+        {"when": "current_discomfort=unknown或未填写", "status": "needs_confirmation", "title": "当前身体感受尚未确认", "suggested_action": "先确认并填写当前是否有不适；不确定就保留未知。", "evidence_ids": []},
+        {"when": "current_discomfort=no", "status": null, "note": "仅不触发本条，不输出适练。"}
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "已被告知的活动限制",
+      "actions": ["seated_arm_movement", "sit_to_stand", "supported_calf_raise"],
+      "inputs": ["restriction_status", "restrictions", "restriction_note", "restriction_matches"],
+      "basis": "user_declared_constraint_comparison",
+      "evidence_ids": [],
+      "can_mark_done": false,
+      "branches": [
+        {"when": "restriction_status=unknown", "status": "needs_confirmation", "title": "已知活动限制尚未确认", "suggested_action": "确认是否曾被明确告知需要避免某类活动；本应用不根据病名猜测限制。"},
+        {"when": "has_restrictions，且avoid_calf_raise遇到clear的supported_calf_raise；或其他限制与该动作的对应关系已由用户明确确认", "status": "condition_gap", "title": "这段动作涉及您填写的活动限制", "suggested_action": "先不跟做这个片段，核对已有要求；不清楚适用范围时向给出要求的专业人员确认。不要用换器材或完成勾选取消限制。"},
+        {"when": "has_restrictions，但动作细节不足以直接匹配，或限制只有备注、未选择标签", "status": "needs_confirmation", "title": "请核对这一动作与原有要求", "suggested_action": "回看相关片段与原先被告知的要求。备注只在本地展示，不由模型解释成新的禁忌。"},
+        {"when": "none_known，或已确认该已知限制不涉及本片段且无其他未匹配限制", "status": null, "note": "不据此认证个人适练。"}
+      ],
+      "matching_limits": {
+        "avoid_repeated_sit_to_stand": "sit_to_stand标签不证明反复次数；除非已确认涉及所限制的反复坐站，否则needs_confirmation。",
+        "avoid_unsupported_standing": "supported_calf_raise或sit_to_stand标签不证明全程有支撑，也不证明存在无支撑环节；先核对。",
+        "avoid_calf_raise": "clear的supported_calf_raise可直接对照该用户限制。",
+        "avoid_arm_raise": "seated_arm_movement还可能只是肘/手活动，不能自动等同上肢抬举；先核对。"
+      }
+    },
+    {
+      "id": "R03",
+      "name": "坐站协助安排",
+      "actions": ["sit_to_stand"],
+      "inputs": ["sit_to_stand_assistance", "helper_available"],
+      "basis": "user_declared_constraint_comparison",
+      "evidence_ids": [],
+      "can_mark_done": false,
+      "branches": [
+        {"when": "sit_to_stand_assistance=yes且helper_available=no", "status": "condition_gap", "title": "坐站协助尚未安排", "suggested_action": "先落实您已说明需要的协助，再重新填写条件；不改成独自试做，也不教授协助技巧。"},
+        {"when": "sit_to_stand_assistance=unknown，或需要协助但helper_available=unknown/未填写", "status": "needs_confirmation", "title": "先确认坐站是否需要协助及本次安排", "suggested_action": "补充对应选项；视频出现协助说明不等于您已有协助者。"},
+        {"when": "sit_to_stand_assistance=no，或yes且helper_available=yes", "status": null, "note": "不再报告协助者缺失；不评价协助能力，不消除其他规则。"}
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "实际坐站座椅",
+      "actions": ["sit_to_stand"],
+      "inputs": ["equipment_availability.seat", "selected_equipment", "equipment_candidates"],
+      "basis": "action_specific_evidence_and_scene_confirmation",
+      "evidence_ids": ["E04"],
+      "can_mark_done": true,
+      "branches": [
+        {"when": "用户明确equipment_availability.seat=no", "status": "condition_gap", "title": "本次坐站座椅尚未准备", "suggested_action": "先确认是否有已有的合适座椅；没有就保留条件缺口，不找替代动作。"},
+        {"when": "用户确认所选座椅has_wheels=yes，或stability_confirmed=no，或non_slip_confirmed=no", "status": "condition_gap", "title": "实际座椅有待调整的条件", "suggested_action": "有轮时优先换用已有无轮座椅；稳固或滑动问题未解决时暂不使用这把椅子跟练。不要拆轮、仅锁轮或要求老人试坐摇晃验证。"},
+        {"when": "未绑定实际座椅；照片可见轮子但本人未确认；任一必要属性unknown；或图像候选与声明冲突", "status": "needs_confirmation", "title": "先确认实际座椅及未明属性", "suggested_action": "选择本次使用的椅子，只核对未明项目；必要时补拍底部。稳定性和是否滑动不能靠照片认证，不要求以运动试做验证。"},
+        {"when": "已绑定座椅，用户确认has_wheels=no、stability_confirmed=yes、non_slip_confirmed=yes，且无相反候选观察", "status": null, "note": "仅当前资料要求未见已知缺口，属性来源仍标用户声明。"}
+      ],
+      "combine": "存在明确缺口又有未知时，用同一张卡展示缺口并在remaining_unknowns列未知，不由后面的未知分支覆盖缺口。"
+    },
+    {
+      "id": "R05",
+      "name": "站立支撑需求与准备",
+      "actions": ["sit_to_stand", "supported_calf_raise"],
+      "inputs": ["support_needed", "equipment_availability.standing_support", "selected_equipment"],
+      "basis": "user_declared_constraint_or_supported_action_requirement",
+      "evidence_ids": ["E05"],
+      "can_mark_done": true,
+      "branches": [
+        {"when": "动作是supported_calf_raise，或support_needed=yes；且standing_support=no", "status": "condition_gap", "title": "需要的支撑尚未准备", "suggested_action": "先明确将使用哪件已有支撑及其实际状态；没有可确认的条件就保留缺口，不推荐临时扶易移动家具。"},
+        {"when": "需要支撑且用户明确所选支撑stability_confirmed=no或non_slip_confirmed=no", "status": "condition_gap", "title": "所选支撑的实际状态有待处理", "suggested_action": "先不要依靠这件支撑跟练；确认是否有已有的合适条件，没有则保留缺口。不要求试靠、摇晃或试做验证。"},
+        {"when": "需要支撑但standing_support=unknown，或没有绑定支撑用途，或实际状态未确认；或sit_to_stand的support_needed=unknown", "status": "needs_confirmation", "title": "支撑条件需要确认", "suggested_action": "只补充本次支撑需求或实际支撑的信息。照片中看见椅背不等于已证明能提供可靠支撑。"},
+        {"when": "所需支撑已指定，用户确认其稳固且不会滑动，无相反观察；或sit_to_stand且support_needed=no", "status": null, "note": "不替代R03的人员协助，也不据此给出适练许可。"}
+      ],
+      "citation_condition": "仅supported_calf_raise引用E05；sit_to_stand由用户自述支撑需求触发时evidence_ids=[]。",
+      "combine": "同一把椅子兼作座椅与支撑时，与R04合并重复问题。对非sit_to_stand不能用E04直接判有轮必定违规；可要求核实支撑实际状态。"
+    },
+    {
+      "id": "R06",
+      "name": "活动位置或进出路线的小物品",
+      "actions": ["seated_arm_movement", "sit_to_stand", "supported_calf_raise"],
+      "inputs": ["observations", "observation_confirmations"],
+      "basis": "environment_principle_and_user_confirmation",
+      "evidence_ids": ["E07"],
+      "can_mark_done": true,
+      "branches": [
+        {"when": "当前照片存在possible_obstacle候选，且用户确认物品在本次活动位置或进出路线", "status": "condition_gap", "title": "活动位置或路线中有物品", "suggested_action": "能安全清理的小物品先移开；不好处理时请家属协助，或另选位置后重新检查。不要要求老人搬重家具。"},
+        {"when": "存在possible_obstacle但用户未确认位置关系，或照片遮挡使活动区域不清", "status": "needs_confirmation", "title": "先确认照片中的遮挡或疑似障碍", "suggested_action": "确认该物品是否在实际活动位置或进出路线；仅视角遮挡时可换角度补拍。"},
+        {"when": "相关候选被用户否认且无待解释矛盾，或当前已识别照片未发现该候选", "status": null, "note": "只能说明已识别范围未触发本条，不能证明整个区域没有障碍。"}
+      ]
+    }
+  ]
+}

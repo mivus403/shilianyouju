@@ -1,0 +1,57 @@
+{
+  "fixture_id": "B",
+  "fictional_conditions": true,
+  "variants": [
+    {
+      "id": "B1",
+      "user_conditions": {
+        "revision": 1,
+        "support_needed": "yes",
+        "current_discomfort": "no",
+        "restriction_status": "none_known",
+        "restrictions": [],
+        "restriction_note": null,
+        "sit_to_stand_assistance": "yes",
+        "helper_available": "no"
+      },
+      "scene_files": ["scene_before_overview.png", "scene_before_floor.png", "scene_before_equipment.png"],
+      "equipment_user_report": {"type": "chair", "has_wheels": "yes", "stability_confirmed": "unknown", "non_slip_confirmed": "unknown"},
+      "obstacle_in_activity_area": "confirmed",
+      "expected_preparation": ["提示坐站协助尚未安排", "提示实际带轮椅子与对应器材要求不符", "提示确认并清理脚边小物品", "不把视频内无轮椅当成本人器材", "不得声称视频没有协助提示"]
+    },
+    {
+      "id": "B2",
+      "user_conditions": {
+        "revision": 2,
+        "support_needed": "yes",
+        "current_discomfort": "no",
+        "restriction_status": "none_known",
+        "restrictions": [],
+        "restriction_note": null,
+        "sit_to_stand_assistance": "yes",
+        "helper_available": "yes"
+      },
+      "scene_files": ["scene_before_overview.png", "scene_before_floor.png", "scene_before_equipment.png"],
+      "equipment_user_report": {"type": "chair", "has_wheels": "yes", "stability_confirmed": "unknown", "non_slip_confirmed": "unknown"},
+      "obstacle_in_activity_area": "confirmed",
+      "expected_preparation": ["不再称协助者缺失；不评价协助能力", "椅子与小物品提示仍保留", "复用原视频提取，不因表单变化重复付费识别"]
+    },
+    {
+      "id": "B3",
+      "user_conditions": {
+        "revision": 3,
+        "support_needed": "yes",
+        "current_discomfort": "no",
+        "restriction_status": "none_known",
+        "restrictions": [],
+        "restriction_note": null,
+        "sit_to_stand_assistance": "yes",
+        "helper_available": "yes"
+      },
+      "scene_files": ["scene_after_overview.png", "scene_after_floor.png", "scene_after_equipment.png"],
+      "equipment_user_report": {"type": "chair", "has_wheels": "no", "stability_confirmed": "yes", "non_slip_confirmed": "unknown"},
+      "obstacle_in_activity_area": "rejected",
+      "expected_preparation": ["更新场地事实，不沿用旧轮子和物品", "保留仍需关注的支撑/协助需求，不宣布个人适练", "来源是用户确认时明确标注，不冒充AI测得稳固", "新增的non_slip_confirmed仍是unknown，不能因稳固与无轮已确认就自动满足全部椅子条件"]
+    }
+  ]
+}

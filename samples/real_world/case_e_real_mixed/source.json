@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1",
+  "kind": "licensed_real_video_composite",
+  "source_title": "A Woman Fitness Instructor Teaching The Group Of Elderly People Some Exercises Fitted For Them",
+  "source_url": "https://www.pexels.com/video/a-woman-fitness-instructor-teaching-the-group-of-elderly-people-some-exercises-fitted-for-them-3196293/",
+  "direct_download_url": "https://videos.pexels.com/video-files/3196293/3196293-hd_1920_1080_25fps.mp4",
+  "creator": "Pressmaster",
+  "license_name": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "downloaded_at": "2026-09-22",
+  "source_sha256": "30960BE21CAEF9194388E7664FF3562272CA646F82FA6FC17DAF14A716254381",
+  "output_sha256": "78D8A8A56780FD252D05A5CC242DA5C6E5DE44A6FF37AE7426DB3734DEB9926C",
+  "modifications": "缩放为1280×720；为覆盖完整旁白循环源画面；添加持续来源/用途标记；移除源音轨；加入本项目案例B的自制中文配音；提取三张测试帧。",
+  "people_endorsement": false
+}
+

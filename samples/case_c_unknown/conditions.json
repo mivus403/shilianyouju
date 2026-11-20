@@ -1,0 +1,22 @@
+{
+  "fixture_id": "C",
+  "fictional_conditions": true,
+  "variants": [
+    {
+      "id": "C1",
+      "user_conditions": {
+        "revision": 1,
+        "support_needed": "yes",
+        "current_discomfort": "unknown",
+        "restriction_status": "unknown",
+        "restrictions": [],
+        "restriction_note": null,
+        "sit_to_stand_assistance": "not_applicable",
+        "helper_available": "not_applicable"
+      },
+      "scene_files": ["scene_unknown_overview.png", "scene_unknown_equipment.png"],
+      "equipment_user_report": {"type": "chair", "has_wheels": "unknown", "stability_confirmed": "unknown"},
+      "expected_preparation": ["器材关键属性被遮挡，保留未知并建议补照/确认", "显示当前身体条件未确认", "不把视频示意器材属性当用户场地属性", "前景物体可提示遮挡或可能占用区域，不建议老人独自搬重物"]
+    }
+  ]
+}

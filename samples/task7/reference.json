@@ -1,0 +1,65 @@
+{
+  "only_for_post_call_review": true,
+  "cases": [
+    {
+      "id": "F",
+      "action": "seated_arm_movement",
+      "speech": "运动应结合个人身体条件，逐步增加活动量。关节持续肿胀、休息后仍未缓解时，应先暂停，必要时请医生评估。",
+      "caption": "本片只有中文配音，不显示逐字字幕。",
+      "offset": 1,
+      "video": "F.mp4",
+      "kind": "synthetic_schematic",
+      "permission_basis": "项目原创脚本与图形、Windows中文合成语音，仅测试",
+      "speech_end": 14.76,
+      "duration": 15.76
+    },
+    {
+      "id": "G",
+      "action": "seated_arm_movement",
+      "speech": "有人说老年运动要循序渐进，我认为完全没必要，第一天做得越多越好。",
+      "caption": "中文配音测试，请听完整原话。",
+      "offset": 1,
+      "video": "G.mp4",
+      "kind": "synthetic_schematic",
+      "permission_basis": "项目原创脚本与图形、Windows中文合成语音，仅测试",
+      "speech_end": 9.232,
+      "duration": 10.232
+    },
+    {
+      "id": "H",
+      "action": "sit_to_stand",
+      "speech": "所有老人都能照着做，完全不需要考虑身体差别。",
+      "caption": "字幕：运动应该结合个人身体条件选择。",
+      "offset": 1,
+      "video": "H.mp4",
+      "kind": "synthetic_schematic",
+      "permission_basis": "项目原创脚本与图形、Windows中文合成语音，仅测试",
+      "speech_end": 6.782,
+      "duration": 7.782
+    },
+    {
+      "id": "I",
+      "action": "sit_to_stand",
+      "speech": null,
+      "caption": "这类坐站练习要用稳固无轮的椅子，是否会滑动须现场确认。",
+      "offset": 0,
+      "video": "I.mp4",
+      "kind": "synthetic_schematic",
+      "permission_basis": "项目原创脚本与图形、Windows中文合成语音，仅测试",
+      "speech_end": 9,
+      "duration": 9
+    },
+    {
+      "id": "J",
+      "action": "supported_calf_raise",
+      "speech": "关节持续肿胀，休息后仍未缓解时，也要继续硬撑，坚持越疼越有效。",
+      "caption": "本片为模拟测试，配音在第15秒后开始。",
+      "offset": 15,
+      "video": "J.mp4",
+      "kind": "synthetic_schematic",
+      "permission_basis": "项目原创脚本与图形、Windows中文合成语音，仅测试",
+      "speech_end": 23.467,
+      "duration": 24.467
+    }
+  ]
+}

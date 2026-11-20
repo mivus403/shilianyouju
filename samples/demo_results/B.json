@@ -1,0 +1,856 @@
+{
+ "id": "B",
+ "title": "案例 B · 椅子坐站：同一视频，不同家庭",
+ "tagline": "换一把椅子、换一个协助条件，准备提示就跟着变化",
+ "video_file": "case_b_preparation/video.mp4",
+ "recorded_with": [
+  "qwen3.8-omni-flash"
+ ],
+ "knowledge_version": "2026-09-22.3",
+ "video_run": {
+  "result": {
+   "schema_version": "0.1",
+   "analysis_id": "video-4c40ccdc4fe7",
+   "revision": 1,
+   "video_id": "task7-B",
+   "duration_seconds": 27.25,
+   "audio_status": "present",
+   "status": "complete",
+   "unprocessed_ranges": [],
+   "actions": [
+    {
+     "start_seconds": 0.0,
+     "end_seconds": 26.8,
+     "type": "sit_to_stand",
+     "description": "室内场景中，一名穿蓝绿色上衣和深色裤子的简笔人物在棕色木质椅子旁反复进行坐站转换：先坐在椅面上，随后身体前倾、双腿发力站起至直立，再屈膝坐下回到椅子上；画面左侧可见白色窗框窗户，右侧可见灰绿色沙发，椅子为无扶手、四条直腿结构，未见轮子。",
+     "equipment": [
+      "chair"
+     ],
+     "recognition": "clear",
+     "scope": "supported",
+     "id": "action-1"
+    }
+   ],
+   "claims": [
+    {
+     "start_seconds": 1.0,
+     "end_seconds": 4.0,
+     "text": "这段视频展示椅子坐站转换。",
+     "text_kind": "quote",
+     "channel": "speech",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-1",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 5.0,
+     "end_seconds": 7.0,
+     "text": "先留意椅子和脚边的区域。",
+     "text_kind": "quote",
+     "channel": "speech",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-2",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 8.0,
+     "end_seconds": 13.0,
+     "text": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+     "text_kind": "quote",
+     "channel": "speech",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-3",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 15.0,
+     "end_seconds": 20.0,
+     "text": "需要别人帮助起身的观众，请先确认协助安排。",
+     "text_kind": "quote",
+     "channel": "speech",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-4",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 21.0,
+     "end_seconds": 25.0,
+     "text": "画面只是动作示意，不是个人运动方案。",
+     "text_kind": "quote",
+     "channel": "speech",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-5",
+     "corrected_text": null
+    }
+   ],
+   "cautions": [
+    {
+     "start_seconds": 0.0,
+     "end_seconds": 26.8,
+     "text": "原创示意素材·非实拍·不作为运动建议",
+     "text_kind": "quote",
+     "channel": "caption",
+     "recognition": "clear",
+     "id": "caution-1"
+    },
+    {
+     "start_seconds": 8.0,
+     "end_seconds": 13.0,
+     "text": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "recognition": "clear",
+     "id": "caution-2"
+    },
+    {
+     "start_seconds": 15.0,
+     "end_seconds": 20.0,
+     "text": "需要别人帮助起身的观众，请先确认协助安排。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "recognition": "clear",
+     "id": "caution-3"
+    },
+    {
+     "start_seconds": 21.0,
+     "end_seconds": 25.0,
+     "text": "画面只是动作示意，不是个人运动方案。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "recognition": "clear",
+     "id": "caution-4"
+    }
+   ],
+   "uncertainties": []
+  },
+  "raw_responses": [
+   {
+    "label": "视频 1/1（原视频 0.0 秒起）",
+    "original_start_seconds": 0.0,
+    "json_repaired": false,
+    "normalizations": [],
+    "text": "{\"actions\":[{\"start_seconds\":0.0,\"end_seconds\":26.8,\"type\":\"sit_to_stand\",\"description\":\"室内场景中，一名穿蓝绿色上衣和深色裤子的简笔人物在棕色木质椅子旁反复进行坐站转换：先坐在椅面上，随后身体前倾、双腿发力站起至直立，再屈膝坐下回到椅子上；画面左侧可见白色窗框窗户，右侧可见灰绿色沙发，椅子为无扶手、四条直腿结构，未见轮子。\",\"equipment\":[\"chair\"],\"recognition\":\"clear\",\"scope\":\"supported\"}],\"claims\":[{\"start_seconds\":1.0,\"end_seconds\":4.0,\"text\":\"这段视频展示椅子坐站转换。\",\"text_kind\":\"quote\",\"channel\":\"speech\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":5.0,\"end_seconds\":7.0,\"text\":\"先留意椅子和脚边的区域。\",\"text_kind\":\"quote\",\"channel\":\"speech\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":8.0,\"end_seconds\":13.0,\"text\":\"对应这类椅子练习，要使用稳固、没有轮子的椅子。\",\"text_kind\":\"quote\",\"channel\":\"speech\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":15.0,\"end_seconds\":20.0,\"text\":\"需要别人帮助起身的观众，请先确认协助安排。\",\"text_kind\":\"quote\",\"channel\":\"speech\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":21.0,\"end_seconds\":25.0,\"text\":\"画面只是动作示意，不是个人运动方案。\",\"text_kind\":\"quote\",\"channel\":\"speech\",\"stance\":\"endorsed\",\"recognition\":\"clear\"}],\"cautions\":[{\"start_seconds\":8.0,\"end_seconds\":13.0,\"text\":\"对应这类椅子练习，要使用稳固、没有轮子的椅子。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"recognition\":\"clear\"},{\"start_seconds\":15.0,\"end_seconds\":20.0,\"text\":\"需要别人帮助起身的观众，请先确认协助安排。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"recognition\":\"clear\"},{\"start_seconds\":21.0,\"end_seconds\":25.0,\"text\":\"画面只是动作示意，不是个人运动方案。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"recognition\":\"clear\"},{\"start_seconds\":0.0,\"end_seconds\":26.8,\"text\":\"原创示意素材·非实拍·不作为运动建议\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"recognition\":\"clear\"}],\"uncertainties\":[]}"
+   }
+  ],
+  "requests": [
+   {
+    "label": "视频 1/1（原视频 0.0 秒起）",
+    "elapsed_seconds": 14.242120999959297,
+    "request_id": "chatcmpl-33da17e9-d2ef-9f2a-a10a-3c8668a40822",
+    "response_model": "qwen3.8-omni-flash",
+    "usage": {
+     "prompt_tokens": 14587,
+     "total_tokens": 15132,
+     "completion_tokens": 545,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 191,
+      "video_tokens": 13772,
+      "text_tokens": 624
+     },
+     "completion_tokens_details": {
+      "text_tokens": 545
+     }
+    }
+   }
+  ]
+ },
+ "claim_run": {
+  "result": {
+   "schema_version": "0.1",
+   "analysis_id": "claim-check-9bc838512e67",
+   "revision": 1,
+   "video_analysis_id": "video-4c40ccdc4fe7",
+   "knowledge_version": "2026-09-22.3",
+   "status": "complete",
+   "cards": [
+    {
+     "id": "claim-card-b452f26f7cb5",
+     "revision": 1,
+     "category": "claim",
+     "status": "supported_limited",
+     "title": "这项表述在有限范围内有依据",
+     "checked_statement": "先留意椅子和脚边的区域。",
+     "fact_refs": [
+      "claim-2"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [
+      "E04",
+      "E07"
+     ],
+     "explanation": "该表述为开始前的环境觉察指令。E04要求坐站练习前确认座椅稳固无轮，E07指出地面障碍属环境风险且室内通道应畅通；视频仅要求留意，未超出资料支持范围。",
+     "suggested_action": "对应坐站练习应先确认座椅稳固、无轮且不会在所在表面滑动；照片只能帮助识别外观，实际状态需要另行确认。；先确认照片中的物品是否挡在本次活动位置或进出路线；对能安全清理的小物品可先移开。具体位置和处理方式是本应用结合输入的建议。",
+     "remaining_unknowns": [],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-f67de8519997",
+     "revision": 1,
+     "category": "claim",
+     "status": "supported_limited",
+     "title": "这项表述在有限范围内有依据",
+     "checked_statement": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+     "fact_refs": [
+      "claim-3"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [
+      "E04"
+     ],
+     "explanation": "E04明确规定坐站练习须使用solid、stable且无轮的椅子，视频表述与之一致，未扩展到其他动作或场景。",
+     "suggested_action": "对应坐站练习应先确认座椅稳固、无轮且不会在所在表面滑动；照片只能帮助识别外观，实际状态需要另行确认。",
+     "remaining_unknowns": [],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-f921dfd928c4",
+     "revision": 1,
+     "category": "claim",
+     "status": "insufficient",
+     "title": "当前资料不足",
+     "checked_statement": "需要别人帮助起身的观众，请先确认协助安排。",
+     "fact_refs": [
+      "claim-4"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [],
+     "explanation": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+     "suggested_action": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+     "remaining_unknowns": [
+      "E03的一般匹配原则与该具体指令之间的推理链较长，未作为支持依据"
+     ],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-d5ac7beb44cf",
+     "revision": 1,
+     "category": "claim",
+     "status": "supported_limited",
+     "title": "这项表述在有限范围内有依据",
+     "checked_statement": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+     "fact_refs": [
+      "caution-2"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [
+      "E04"
+     ],
+     "explanation": "与candidate-f67de8519997内容相同，字幕重复了E04对坐站练习的椅子要求，表述未超出资料范围。",
+     "suggested_action": "对应坐站练习应先确认座椅稳固、无轮且不会在所在表面滑动；照片只能帮助识别外观，实际状态需要另行确认。",
+     "remaining_unknowns": [],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-9c41977d8a64",
+     "revision": 1,
+     "category": "claim",
+     "status": "insufficient",
+     "title": "当前资料不足",
+     "checked_statement": "需要别人帮助起身的观众，请先确认协助安排。",
+     "fact_refs": [
+      "caution-3"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [],
+     "explanation": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+     "suggested_action": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+     "remaining_unknowns": [
+      "同语音版分析，E03和E04仅间接涉及但未正面表述该步骤"
+     ],
+     "handling_state": "open"
+    }
+   ],
+   "context_items": [
+    {
+     "candidate_id": "candidate-f7cd0229cd0f",
+     "checked_statement": "这段视频展示椅子坐站转换。",
+     "fact_refs": [
+      "claim-1"
+     ],
+     "disposition": "not_health_claim",
+     "explanation": "该表述是对视频画面内容的客观描述，动作识别已确认为sit_to_stand，不构成可核查的健康主张。"
+    },
+    {
+     "candidate_id": "candidate-227d68a15a18",
+     "checked_statement": "画面只是动作示意，不是个人运动方案。",
+     "fact_refs": [
+      "claim-5"
+     ],
+     "disposition": "not_health_claim",
+     "explanation": "该表述是对视频内容性质的声明（示意而非处方），不涉及健康效果或动作规范的可核查主张。"
+    },
+    {
+     "candidate_id": "candidate-2a6a06f1e071",
+     "checked_statement": "原创示意素材·非实拍·不作为运动建议",
+     "fact_refs": [
+      "caution-1"
+     ],
+     "disposition": "not_health_claim",
+     "explanation": "字幕免责声明，说明素材性质和不构成运动建议，属于文件/内容元信息，非健康主张。"
+    },
+    {
+     "candidate_id": "candidate-5528d401e622",
+     "checked_statement": "画面只是动作示意，不是个人运动方案。",
+     "fact_refs": [
+      "caution-4"
+     ],
+     "disposition": "not_health_claim",
+     "explanation": "字幕重复了语音版的视频性质声明，属于内容元信息，非健康主张。"
+    }
+   ],
+   "coverage_notes": [
+    "视频提取状态 complete 只表示请求和结构处理完整，不证明语音与画面内容全部识别。"
+   ],
+   "validation_notes": [
+    "模型生成的覆盖总结只保留在原始回复中，未作为系统覆盖结论。"
+   ]
+  },
+  "candidates": [
+   {
+    "candidate_id": "candidate-f7cd0229cd0f",
+    "checked_statement": "这段视频展示椅子坐站转换。",
+    "fact_refs": [
+     "claim-1"
+    ],
+    "source_kind": "claim",
+    "channel": "speech",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 1.0,
+    "end_seconds": 4.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-b452f26f7cb5",
+    "checked_statement": "先留意椅子和脚边的区域。",
+    "fact_refs": [
+     "claim-2"
+    ],
+    "source_kind": "claim",
+    "channel": "speech",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 5.0,
+    "end_seconds": 7.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-f67de8519997",
+    "checked_statement": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+    "fact_refs": [
+     "claim-3"
+    ],
+    "source_kind": "claim",
+    "channel": "speech",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 8.0,
+    "end_seconds": 13.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-f921dfd928c4",
+    "checked_statement": "需要别人帮助起身的观众，请先确认协助安排。",
+    "fact_refs": [
+     "claim-4"
+    ],
+    "source_kind": "claim",
+    "channel": "speech",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 15.0,
+    "end_seconds": 20.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-227d68a15a18",
+    "checked_statement": "画面只是动作示意，不是个人运动方案。",
+    "fact_refs": [
+     "claim-5"
+    ],
+    "source_kind": "claim",
+    "channel": "speech",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 21.0,
+    "end_seconds": 25.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-2a6a06f1e071",
+    "checked_statement": "原创示意素材·非实拍·不作为运动建议",
+    "fact_refs": [
+     "caution-1"
+    ],
+    "source_kind": "caution",
+    "channel": "caption",
+    "stance": null,
+    "recognition": "clear",
+    "start_seconds": 0.0,
+    "end_seconds": 26.8,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-d5ac7beb44cf",
+    "checked_statement": "对应这类椅子练习，要使用稳固、没有轮子的椅子。",
+    "fact_refs": [
+     "caution-2"
+    ],
+    "source_kind": "caution",
+    "channel": "caption",
+    "stance": null,
+    "recognition": "clear",
+    "start_seconds": 8.0,
+    "end_seconds": 13.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-9c41977d8a64",
+    "checked_statement": "需要别人帮助起身的观众，请先确认协助安排。",
+    "fact_refs": [
+     "caution-3"
+    ],
+    "source_kind": "caution",
+    "channel": "caption",
+    "stance": null,
+    "recognition": "clear",
+    "start_seconds": 15.0,
+    "end_seconds": 20.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-5528d401e622",
+    "checked_statement": "画面只是动作示意，不是个人运动方案。",
+    "fact_refs": [
+     "caution-4"
+    ],
+    "source_kind": "caution",
+    "channel": "caption",
+    "stance": null,
+    "recognition": "clear",
+    "start_seconds": 21.0,
+    "end_seconds": 25.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   }
+  ],
+  "raw_responses": [
+   {
+    "label": "主张与资料对照",
+    "json_repaired": false,
+    "text": "{\"assessments\":[{\"candidate_id\":\"candidate-f7cd0229cd0f\",\"checked_statement\":\"这段视频展示椅子坐站转换。\",\"fact_refs\":[\"claim-1\"],\"action_ids\":[\"action-1\"],\"disposition\":\"not_health_claim\",\"claim_scope\":\"unclear\",\"topics\":[],\"status\":null,\"explanation\":\"该表述是对视频画面内容的客观描述，动作识别已确认为sit_to_stand，不构成可核查的健康主张。\",\"evidence_ids\":[],\"uncertainties\":[]},{\"candidate_id\":\"candidate-b452f26f7cb5\",\"checked_statement\":\"先留意椅子和脚边的区域。\",\"fact_refs\":[\"claim-2\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"general_principle\",\"topics\":[\"chair_requirements\",\"floor_obstacles\"],\"status\":\"supported_limited\",\"explanation\":\"该表述为开始前的环境觉察指令。E04要求坐站练习前确认座椅稳固无轮，E07指出地面障碍属环境风险且室内通道应畅通；视频仅要求留意，未超出资料支持范围。\",\"evidence_ids\":[\"E04\",\"E07\"],\"uncertainties\":[]},{\"candidate_id\":\"candidate-f67de8519997\",\"checked_statement\":\"对应这类椅子练习，要使用稳固、没有轮子的椅子。\",\"fact_refs\":[\"claim-3\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"action_specific\",\"topics\":[\"chair_requirements\"],\"status\":\"supported_limited\",\"explanation\":\"E04明确规定坐站练习须使用solid、stable且无轮的椅子，视频表述与之一致，未扩展到其他动作或场景。\",\"evidence_ids\":[\"E04\"],\"uncertainties\":[]},{\"candidate_id\":\"candidate-f921dfd928c4\",\"checked_statement\":\"需要别人帮助起身的观众，请先确认协助安排。\",\"fact_refs\":[\"claim-4\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"general_principle\",\"topics\":[\"other\"],\"status\":\"insufficient\",\"explanation\":\"E04排除条款提及不要求需协助者徒手起身，E03要求活动与个人条件匹配，但两者均未正面表述须先确认协助安排这一具体步骤，无法直接支持该主张。\",\"evidence_ids\":[],\"uncertainties\":[\"E03的一般匹配原则与该具体指令之间的推理链较长，未作为支持依据\"]},{\"candidate_id\":\"candidate-227d68a15a18\",\"checked_statement\":\"画面只是动作示意，不是个人运动方案。\",\"fact_refs\":[\"claim-5\"],\"action_ids\":[\"action-1\"],\"disposition\":\"not_health_claim\",\"claim_scope\":\"unclear\",\"topics\":[],\"status\":null,\"explanation\":\"该表述是对视频内容性质的声明（示意而非处方），不涉及健康效果或动作规范的可核查主张。\",\"evidence_ids\":[],\"uncertainties\":[]},{\"candidate_id\":\"candidate-2a6a06f1e071\",\"checked_statement\":\"原创示意素材·非实拍·不作为运动建议\",\"fact_refs\":[\"caution-1\"],\"action_ids\":[\"action-1\"],\"disposition\":\"not_health_claim\",\"claim_scope\":\"unclear\",\"topics\":[],\"status\":null,\"explanation\":\"字幕免责声明，说明素材性质和不构成运动建议，属于文件/内容元信息，非健康主张。\",\"evidence_ids\":[],\"uncertainties\":[]},{\"candidate_id\":\"candidate-d5ac7beb44cf\",\"checked_statement\":\"对应这类椅子练习，要使用稳固、没有轮子的椅子。\",\"fact_refs\":[\"caution-2\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"action_specific\",\"topics\":[\"chair_requirements\"],\"status\":\"supported_limited\",\"explanation\":\"与candidate-f67de8519997内容相同，字幕重复了E04对坐站练习的椅子要求，表述未超出资料范围。\",\"evidence_ids\":[\"E04\"],\"uncertainties\":[]},{\"candidate_id\":\"candidate-9c41977d8a64\",\"checked_statement\":\"需要别人帮助起身的观众，请先确认协助安排。\",\"fact_refs\":[\"caution-3\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"general_principle\",\"topics\":[\"other\"],\"status\":\"insufficient\",\"explanation\":\"与candidate-f921dfd928c4内容相同，本地资料无正面依据支持须先确认协助安排这一具体指令。\",\"evidence_ids\":[],\"uncertainties\":[\"同语音版分析，E03和E04仅间接涉及但未正面表述该步骤\"]},{\"candidate_id\":\"candidate-5528d401e622\",\"checked_statement\":\"画面只是动作示意，不是个人运动方案。\",\"fact_refs\":[\"caution-4\"],\"action_ids\":[\"action-1\"],\"disposition\":\"not_health_claim\",\"claim_scope\":\"unclear\",\"topics\":[],\"status\":null,\"explanation\":\"字幕重复了语音版的视频性质声明，属于内容元信息，非健康主张。\",\"evidence_ids\":[],\"uncertainties\":[]}],\"coverage_notes\":[\"视频未涉及具体次数、时长、频率或进阶方案，本次资料卡亦无对应条目可核查\",\"视频未提及跌倒预防效果或疾病疗效，E06未被触发\"]}"
+   }
+  ],
+  "requests": [
+   {
+    "label": "主张与资料对照",
+    "elapsed_seconds": 103.89972959994338,
+    "request_id": "chatcmpl-abc2e334-ff94-90e8-8258-8ec0ab66cf59",
+    "response_model": "qwen3.8-omni-flash",
+    "usage": {
+     "prompt_tokens": 3305,
+     "total_tokens": 7966,
+     "completion_tokens": 4661,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 3305
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 3545,
+      "text_tokens": 1116
+     }
+    }
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "before",
+   "label": "调整前：带轮椅子、脚边有小物品",
+   "files": [
+    "case_b_preparation/scene_before_overview.png",
+    "case_b_preparation/scene_before_floor.png",
+    "case_b_preparation/scene_before_equipment.png"
+   ],
+   "run": {
+    "result": {
+     "schema_version": "0.1",
+     "analysis_id": "scene-23e3cbb3419f",
+     "revision": 1,
+     "status": "complete",
+     "photos": [
+      {
+       "id": "photo-1",
+       "role": "extra",
+       "path": "scene_before_overview.png"
+      },
+      {
+       "id": "photo-2",
+       "role": "extra",
+       "path": "scene_before_floor.png"
+      },
+      {
+       "id": "photo-3",
+       "role": "extra",
+       "path": "scene_before_equipment.png"
+      }
+     ],
+     "selected_equipment": [],
+     "visible_items": [
+      {
+       "photo_id": "photo-1",
+       "category": "chair",
+       "description": "位于画面中央的办公椅，带有五星脚底座和轮子",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-1",
+       "category": "floor_object",
+       "description": "椅子右侧地面上的两个蓝色椭圆形物体（疑似脚踏）",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-1",
+       "category": "container",
+       "description": "地面椭圆物体旁的一个浅青色长方形容器",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-1",
+       "category": "furniture",
+       "description": "画面右侧的一个绿色矮柜或沙发状家具",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-2",
+       "category": "chair_base",
+       "description": "特写视角下的椅子底座支架及三个可见的黑色圆形部件（疑似轮子）",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-2",
+       "category": "floor_object",
+       "description": "地面上放大的两个蓝色椭圆形物体和一个浅青色长方形容器",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-3",
+       "category": "chair",
+       "description": "器材近景中的办公椅，底部结构清晰可见",
+       "recognition": "clear"
+      }
+     ],
+     "equipment_candidates": [
+      {
+       "candidate_id": "equipment-1",
+       "type": "office_chair",
+       "photo_ids": [
+        "photo-1",
+        "photo-2",
+        "photo-3"
+       ],
+       "description": "一张带有靠背、扶手（部分角度不可见）、气压杆和五星底座的办公转椅",
+       "attributes": [
+        {
+         "name": "has_wheels",
+         "value": "present",
+         "evidence": "在 photo-1 和 photo-3 中清晰可见底座末端装有黑色滚轮；photo-2 展示了底座的局部细节",
+         "recognition": "clear"
+        },
+        {
+         "name": "stability",
+         "value": "unknown",
+         "evidence": "无法仅凭静态图片确认实际承重或稳定性",
+         "recognition": "uncertain"
+        }
+       ],
+       "recognition": "clear"
+      },
+      {
+       "candidate_id": "equipment-2",
+       "type": "footrest_or_mat",
+       "photo_ids": [
+        "photo-1",
+        "photo-2"
+       ],
+       "description": "放置在地面椅子前方的蓝色椭圆形物体",
+       "attributes": [
+        {
+         "name": "function",
+         "value": "unknown",
+         "evidence": "具体用途不明，可能是脚踏、坐垫或装饰物",
+         "recognition": "uncertain"
+        }
+       ],
+       "recognition": "clear"
+      }
+     ],
+     "observations": [
+      {
+       "photo_id": "photo-1",
+       "equipment_candidate_id": "equipment-2",
+       "kind": "possible_obstacle",
+       "location": "椅子前方地面",
+       "description": "地面上的蓝色椭圆物体可能构成绊倒风险或作为脚踏使用",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-2",
+       "equipment_candidate_id": "equipment-1",
+       "kind": "view_insufficient",
+       "location": "椅子整体",
+       "description": "该图为脚下区域特写，未显示完整的座椅靠背和顶部结构",
+       "recognition": "uncertain"
+      }
+     ],
+     "uncertainties": [
+      "所有物体的材质、真实尺寸及防滑性能无法通过示意图确认",
+      "设备的稳固性和安全性不能仅凭照片判断"
+     ]
+    },
+    "raw_responses": [
+     {
+      "label": "场地图片",
+      "json_repaired": false,
+      "text": "{\n  \"visible_items\": [\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"chair\",\n      \"description\": \"位于画面中央的办公椅，带有五星脚底座和轮子\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"floor_object\",\n      \"description\": \"椅子右侧地面上的两个蓝色椭圆形物体（疑似脚踏）\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"container\",\n      \"description\": \"地面椭圆物体旁的一个浅青色长方形容器\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"furniture\",\n      \"description\": \"画面右侧的一个绿色矮柜或沙发状家具\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-2\",\n      \"category\": \"chair_base\",\n      \"description\": \"特写视角下的椅子底座支架及三个可见的黑色圆形部件（疑似轮子）\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-2\",\n      \"category\": \"floor_object\",\n      \"description\": \"地面上放大的两个蓝色椭圆形物体和一个浅青色长方形容器\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-3\",\n      \"category\": \"chair\",\n      \"description\": \"器材近景中的办公椅，底部结构清晰可见\",\n      \"recognition\": \"clear\"\n    }\n  ],\n  \"equipment_candidates\": [\n    {\n      \"candidate_id\": \"equipment-1\",\n      \"type\": \"office_chair\",\n      \"photo_ids\": [\n        \"photo-1\",\n        \"photo-2\",\n        \"photo-3\"\n      ],\n      \"description\": \"一张带有靠背、扶手（部分角度不可见）、气压杆和五星底座的办公转椅\",\n      \"attributes\": [\n        {\n          \"name\": \"has_wheels\",\n          \"value\": \"present\",\n          \"evidence\": \"在 photo-1 和 photo-3 中清晰可见底座末端装有黑色滚轮；photo-2 展示了底座的局部细节\",\n          \"recognition\": \"clear\"\n        },\n        {\n          \"name\": \"stability\",\n          \"value\": \"unknown\",\n          \"evidence\": \"无法仅凭静态图片确认实际承重或稳定性\",\n          \"recognition\": \"uncertain\"\n        }\n      ],\n      \"recognition\": \"clear\"\n    },\n    {\n      \"candidate_id\": \"equipment-2\",\n      \"type\": \"footrest_or_mat\",\n      \"photo_ids\": [\n        \"photo-1\",\n        \"photo-2\"\n      ],\n      \"description\": \"放置在地面椅子前方的蓝色椭圆形物体\",\n      \"attributes\": [\n        {\n          \"name\": \"function\",\n          \"value\": \"unknown\",\n          \"evidence\": \"具体用途不明，可能是脚踏、坐垫或装饰物\",\n          \"recognition\": \"uncertain\"\n        }\n      ],\n      \"recognition\": \"clear\"\n    }\n  ],\n  \"observations\": [\n    {\n      \"photo_id\": \"photo-1\",\n      \"equipment_candidate_id\": \"equipment-2\",\n      \"kind\": \"possible_obstacle\",\n      \"location\": \"椅子前方地面\",\n      \"description\": \"地面上的蓝色椭圆物体可能构成绊倒风险或作为脚踏使用\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-2\",\n      \"equipment_candidate_id\": \"equipment-1\",\n      \"kind\": \"view_insufficient\",\n      \"location\": \"椅子整体\",\n      \"description\": \"该图为脚下区域特写，未显示完整的座椅靠背和顶部结构\",\n      \"recognition\": \"uncertain\"\n    }\n  ],\n  \"uncertainties\": [\n    \"所有物体的材质、真实尺寸及防滑性能无法通过示意图确认\",\n    \"设备的稳固性和安全性不能仅凭照片判断\"\n  ]\n}"
+     }
+    ],
+    "requests": [
+     {
+      "label": "场地图片",
+      "elapsed_seconds": 18.14130560006015,
+      "request_id": "chatcmpl-09eb8884-65e4-93f5-8acc-e11c102a7386",
+      "response_model": "qwen3.8-omni-flash",
+      "usage": {
+       "prompt_tokens": 1948,
+       "total_tokens": 2920,
+       "completion_tokens": 972,
+       "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1536,
+        "text_tokens": 412
+       },
+       "completion_tokens_details": {
+        "text_tokens": 972
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "label": "调整后：无轮椅子、物品已移开",
+   "files": [
+    "case_b_preparation/scene_after_overview.png",
+    "case_b_preparation/scene_after_floor.png",
+    "case_b_preparation/scene_after_equipment.png"
+   ],
+   "run": {
+    "result": {
+     "schema_version": "0.1",
+     "analysis_id": "scene-4b4672430a0e",
+     "revision": 1,
+     "status": "complete",
+     "photos": [
+      {
+       "id": "photo-1",
+       "role": "extra",
+       "path": "scene_after_overview.png"
+      },
+      {
+       "id": "photo-2",
+       "role": "extra",
+       "path": "scene_after_floor.png"
+      },
+      {
+       "id": "photo-3",
+       "role": "extra",
+       "path": "scene_after_equipment.png"
+      }
+     ],
+     "selected_equipment": [],
+     "visible_items": [
+      {
+       "photo_id": "photo-1",
+       "category": "chair",
+       "description": "棕色椅子，位于画面中央",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-1",
+       "category": "furniture",
+       "description": "绿色长方形物体（类似桌子或柜子），位于画面右侧",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-1",
+       "category": "window",
+       "description": "左侧墙上的白色窗户图形",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-2",
+       "category": "chair_legs",
+       "description": "椅子的腿部特写，显示两条腿接触地面",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-3",
+       "category": "chair",
+       "description": "棕色椅子近景，可见靠背和座面结构",
+       "recognition": "clear"
+      }
+     ],
+     "equipment_candidates": [
+      {
+       "candidate_id": "equipment-1",
+       "type": "chair",
+       "photo_ids": [
+        "photo-1",
+        "photo-2",
+        "photo-3"
+       ],
+       "description": "一把棕色的四脚椅子，在图2中清晰展示了其腿部直接接触地面的状态",
+       "attributes": [
+        {
+         "name": "has_wheels",
+         "value": "absent",
+         "evidence": "在 photo-2 (视角：脚下区域) 中，可以清楚看到椅子的两个前腿底部是平的木质/塑料支脚，直接放置在地面上，没有轮子结构。",
+         "recognition": "clear"
+        },
+        {
+         "name": "stability",
+         "value": "unknown",
+         "evidence": "虽然能看到四条腿着地，但无法通过静态图片确认其在受力下的稳定性。",
+         "recognition": "uncertain"
+        }
+       ],
+       "recognition": "clear"
+      },
+      {
+       "candidate_id": "equipment-2",
+       "type": "table_or_cabinet",
+       "photo_ids": [
+        "photo-1",
+        "photo-3"
+       ],
+       "description": "位于右侧的绿色长方体家具，有短粗的深色支脚",
+       "attributes": [
+        {
+         "name": "function",
+         "value": "unknown",
+         "evidence": "仅作为背景物体出现，未展示具体用途。",
+         "recognition": "uncertain"
+        }
+       ],
+       "recognition": "clear"
+      }
+     ],
+     "observations": [
+      {
+       "photo_id": "photo-2",
+       "equipment_candidate_id": "equipment-1",
+       "kind": "view_insufficient",
+       "location": "椅子后方及整体环境",
+       "description": "该图为局部特写（脚下区域），虽能确认无轮，但无法观察椅子的完整形态或使用场景。",
+       "recognition": "uncertain"
+      },
+      {
+       "photo_id": "photo-1",
+       "equipment_candidate_id": "equipment-2",
+       "kind": "possible_obstacle",
+       "location": "画面右侧",
+       "description": "绿色家具占据了一定空间，可能构成运动区域的障碍物。",
+       "recognition": "clear"
+      },
+      {
+       "photo_id": "photo-1",
+       "equipment_candidate_id": "equipment-1",
+       "kind": "support_visible",
+       "location": "椅子下方",
+       "description": "椅子放置在平坦的地面上，看似提供了支撑基础。",
+       "recognition": "clear"
+      }
+     ],
+     "uncertainties": [
+      "稳固性不能仅凭照片确认",
+      "承重能力无法通过视觉判断",
+      "地面材质及防滑性能未知",
+      "图片标注明确说明‘不代表照片识别精度’且为‘模拟场地示意图’，所有物理属性均为假设"
+     ]
+    },
+    "raw_responses": [
+     {
+      "label": "场地图片",
+      "json_repaired": false,
+      "text": "{\n  \"visible_items\": [\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"chair\",\n      \"description\": \"棕色椅子，位于画面中央\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"furniture\",\n      \"description\": \"绿色长方形物体（类似桌子或柜子），位于画面右侧\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"category\": \"window\",\n      \"description\": \"左侧墙上的白色窗户图形\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-2\",\n      \"category\": \"chair_legs\",\n      \"description\": \"椅子的腿部特写，显示两条腿接触地面\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-3\",\n      \"category\": \"chair\",\n      \"description\": \"棕色椅子近景，可见靠背和座面结构\",\n      \"recognition\": \"clear\"\n    }\n  ],\n  \"equipment_candidates\": [\n    {\n      \"candidate_id\": \"equipment-1\",\n      \"type\": \"chair\",\n      \"photo_ids\": [\n        \"photo-1\",\n        \"photo-2\",\n        \"photo-3\"\n      ],\n      \"description\": \"一把棕色的四脚椅子，在图2中清晰展示了其腿部直接接触地面的状态\",\n      \"attributes\": [\n        {\n          \"name\": \"has_wheels\",\n          \"value\": \"absent\",\n          \"evidence\": \"在 photo-2 (视角：脚下区域) 中，可以清楚看到椅子的两个前腿底部是平的木质/塑料支脚，直接放置在地面上，没有轮子结构。\",\n          \"recognition\": \"clear\"\n        },\n        {\n          \"name\": \"stability\",\n          \"value\": \"unknown\",\n          \"evidence\": \"虽然能看到四条腿着地，但无法通过静态图片确认其在受力下的稳定性。\",\n          \"recognition\": \"uncertain\"\n        }\n      ],\n      \"recognition\": \"clear\"\n    },\n    {\n      \"candidate_id\": \"equipment-2\",\n      \"type\": \"table_or_cabinet\",\n      \"photo_ids\": [\n        \"photo-1\",\n        \"photo-3\"\n      ],\n      \"description\": \"位于右侧的绿色长方体家具，有短粗的深色支脚\",\n      \"attributes\": [\n        {\n          \"name\": \"function\",\n          \"value\": \"unknown\",\n          \"evidence\": \"仅作为背景物体出现，未展示具体用途。\",\n          \"recognition\": \"uncertain\"\n        }\n      ],\n      \"recognition\": \"clear\"\n    }\n  ],\n  \"observations\": [\n    {\n      \"photo_id\": \"photo-2\",\n      \"equipment_candidate_id\": \"equipment-1\",\n      \"kind\": \"view_insufficient\",\n      \"location\": \"椅子后方及整体环境\",\n      \"description\": \"该图为局部特写（脚下区域），虽能确认无轮，但无法观察椅子的完整形态或使用场景。\",\n      \"recognition\": \"uncertain\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"equipment_candidate_id\": \"equipment-2\",\n      \"kind\": \"possible_obstacle\",\n      \"location\": \"画面右侧\",\n      \"description\": \"绿色家具占据了一定空间，可能构成运动区域的障碍物。\",\n      \"recognition\": \"clear\"\n    },\n    {\n      \"photo_id\": \"photo-1\",\n      \"equipment_candidate_id\": \"equipment-1\",\n      \"kind\": \"support_visible\",\n      \"location\": \"椅子下方\",\n      \"description\": \"椅子放置在平坦的地面上，看似提供了支撑基础。\",\n      \"recognition\": \"clear\"\n    }\n  ],\n  \"uncertainties\": [\n    \"稳固性不能仅凭照片确认\",\n    \"承重能力无法通过视觉判断\",\n    \"地面材质及防滑性能未知\",\n    \"图片标注明确说明‘不代表照片识别精度’且为‘模拟场地示意图’，所有物理属性均为假设\"\n  ]\n}"
+     }
+    ],
+    "requests": [
+     {
+      "label": "场地图片",
+      "elapsed_seconds": 17.207573699997738,
+      "request_id": "chatcmpl-d7e0f4e9-a5d6-9043-af9e-6fd8daa76e9e",
+      "response_model": "qwen3.8-omni-flash",
+      "usage": {
+       "prompt_tokens": 1948,
+       "total_tokens": 2930,
+       "completion_tokens": 982,
+       "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1536,
+        "text_tokens": 412
+       },
+       "completion_tokens_details": {
+        "text_tokens": 982
+       }
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

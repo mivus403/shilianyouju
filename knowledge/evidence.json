@@ -1,0 +1,257 @@
+{
+  "schema_version": "0.1",
+  "version": "2026-09-22.3",
+  "checked_at": "2026-09-22",
+  "purpose": "首版局部核查资料；已核对公开来源，不代表专家审核或个人运动许可。context、applicability、exclusions、allowed_statement 是项目整理，excerpt 才是原文短摘录。",
+  "cards": [
+    {
+      "id": "E01",
+      "topic": "持续或加重的不适与硬撑说法",
+      "source_title": "国家卫生健康委员会2026年4月9日新闻发布会文字实录",
+      "publisher": "国家卫生健康委宣传司；答问者蒋协远",
+      "url": "https://www.nhc.gov.cn/xcs/c100122/202604/e51230abcee348bea75d5ef456f26014.shtml",
+      "verified_copy_url": "https://wjw.panjin.gov.cn/2026_04/14_09/content-558766.html",
+      "source_type": "official_expert_public_education_qa",
+      "published_at": "2026-04-09",
+      "source_last_reviewed_at": null,
+      "locator": "《羊城晚报》提问；蒋协远答问第三点",
+      "excerpt": "停下来，缓一缓",
+      "context": "答问区分短暂疲劳与关节刺痛、持续肿胀、活动后加重及休息后未缓解；后者应暂停，必要时就医。",
+      "applicability": "中老年日常健身中，明确要求在上述持续或加重症状下继续硬撑的说法。",
+      "exclusions": [
+        "不能仅见疼字就判冲突",
+        "不用于诊断损伤、急救分级或规定等待一天再就医",
+        "不覆盖个体康复方案"
+      ],
+      "allowed_statement": "资料区分短暂疲劳与持续、加重的不适。持续关节肿胀且休息后仍未缓解时，应暂停，必要时请医生评估；不能把这些情况一概当作练习有效的表现。",
+      "match_scope": {
+        "kind": "general_principle",
+        "topics": [
+          "persistent_discomfort"
+        ],
+        "actions": []
+      },
+      "checked_at": "2026-09-22",
+      "version": "2"
+    },
+    {
+      "id": "E02",
+      "topic": "运动量循序渐进",
+      "source_title": "国家卫生健康委员会2026年4月9日新闻发布会文字实录",
+      "publisher": "国家卫生健康委宣传司；答问者蒋协远",
+      "url": "https://www.nhc.gov.cn/xcs/c100122/202604/e51230abcee348bea75d5ef456f26014.shtml",
+      "verified_copy_url": "https://wjw.panjin.gov.cn/2026_04/14_09/content-558766.html",
+      "source_type": "official_expert_public_education_qa",
+      "published_at": "2026-04-09",
+      "source_last_reviewed_at": null,
+      "locator": "《羊城晚报》提问；蒋协远答问第三点",
+      "excerpt": "科学运动重在适度、循序渐进。",
+      "context": "讨论中老年日常运动的方式、强度及不适，不是训练剂量试验。",
+      "applicability": "无条件要求第一天尽量加量、练得越多必定越好的主张。",
+      "exclusions": [
+        "逐步增加次数并不与本卡冲突",
+        "不给次数、时长、负重或强度上限",
+        "不能判断某个具体训练量是否过量"
+      ],
+      "allowed_statement": "不能把第一天尽量加量、越多越好作为一般原则；应按自身情况逐步增加。资料不能据此确定您的具体训练量。",
+      "match_scope": {
+        "kind": "general_principle",
+        "topics": [
+          "unlimited_training_volume"
+        ],
+        "actions": []
+      },
+      "checked_at": "2026-09-22",
+      "version": "1"
+    },
+    {
+      "id": "E03",
+      "topic": "活动与个人条件相匹配",
+      "source_title": "Physical activity guidelines for older adults",
+      "publisher": "NHS",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-older-adults/",
+      "verified_copy_url": null,
+      "source_type": "official_public_health_guidance",
+      "published_at": null,
+      "source_last_reviewed_at": "2024-08-15",
+      "locator": "页面开头、Adults aged 65 and over should aim to 之前",
+      "excerpt": "Make sure your activity and its intensity are appropriate for your fitness.",
+      "context": "面向65岁及以上成人的活动建议，强调活动及强度与个人体能匹配。",
+      "applicability": "针对老年人的无条件人人照做、无需考虑身体差别的说法。年龄只用于资料范围说明，不作个人适练阈值。",
+      "exclusions": [
+        "不能推断某人不宜运动",
+        "不把任何病名自动转换为禁忌",
+        "不能为具体动作背书",
+        "不覆盖儿童"
+      ],
+      "allowed_statement": "这则资料要求活动和强度与个人条件相匹配；不能由一般运动建议推出所有人都能照做，也不能由这张卡判断个人能否跟练。",
+      "match_scope": {
+        "kind": "general_principle",
+        "topics": [
+          "universal_suitability"
+        ],
+        "actions": []
+      },
+      "checked_at": "2026-09-22",
+      "version": "2"
+    },
+    {
+      "id": "E04",
+      "topic": "坐站练习的椅子条件",
+      "source_title": "Strength exercises",
+      "publisher": "NHS",
+      "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+      "verified_copy_url": null,
+      "source_type": "official_exercise_instruction",
+      "published_at": null,
+      "source_last_reviewed_at": "2024-02-28",
+      "locator": "开头 chair-based exercises 椅子要求；下接 Sit-to-stand",
+      "excerpt": "a solid, stable chair that does not have wheels",
+      "context": "该页椅子练习要求座椅结实稳固、无轮，且在所在表面不滑动；包括坐站练习。",
+      "applicability": "首版只对明确的 sit_to_stand 场景核查这些椅子要求；选定的实际座椅必须与照片候选绑定。",
+      "exclusions": [
+        "不扩展为所有运动一律禁用带轮器材",
+        "不据照片认证稳定性、防滑或承重",
+        "不建议拆扶手或锁轮后视同无轮椅",
+        "不要求需要协助的人徒手起身"
+      ],
+      "allowed_statement": "对应坐站练习应先确认座椅稳固、无轮且不会在所在表面滑动；照片只能帮助识别外观，实际状态需要另行确认。",
+      "match_scope": {
+        "kind": "action_specific",
+        "topics": [
+          "chair_requirements"
+        ],
+        "actions": [
+          "sit_to_stand"
+        ]
+      },
+      "checked_at": "2026-09-22",
+      "version": "1"
+    },
+    {
+      "id": "E05",
+      "topic": "扶椅提踵的支撑环节",
+      "source_title": "Strength exercises",
+      "publisher": "NHS",
+      "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+      "verified_copy_url": null,
+      "source_type": "official_exercise_instruction",
+      "published_at": null,
+      "source_last_reviewed_at": "2024-02-28",
+      "locator": "Calf raises，步骤A；同段另有无支撑进阶说明",
+      "excerpt": "Rest your hands on the back of a chair for stability.",
+      "context": "这段示例使用椅背支撑；来源另列更难的无支撑版本。",
+      "applicability": "本版 supported_calf_raise，即明确使用支撑的提踵版本。",
+      "exclusions": [
+        "不能宣称任何无支撑提踵都是错误",
+        "不能仅因照片看见椅背就确认支撑可靠",
+        "不推荐进阶、负荷或替代动作"
+      ],
+      "allowed_statement": "这一扶椅提踵版本包含支撑环节；需先确认您准备使用的支撑及其实际状态。",
+      "match_scope": {
+        "kind": "action_specific",
+        "topics": [
+          "support_requirements"
+        ],
+        "actions": [
+          "supported_calf_raise"
+        ]
+      },
+      "checked_at": "2026-09-22",
+      "version": "1"
+    },
+    {
+      "id": "E06",
+      "topic": "跌倒预防作用的范围",
+      "source_title": "预防老年人跌倒健康教育核心信息",
+      "publisher": "国家卫生健康委疾病预防控制局、中国疾控中心慢病中心",
+      "url": "https://ncncd.chinacdc.cn/xzzq/202409/t20240923_311832.htm",
+      "verified_copy_url": null,
+      "source_type": "official_health_education_core_messages",
+      "published_at": "2024-09-23",
+      "content_date": "2021-10-12",
+      "source_last_reviewed_at": null,
+      "locator": "核心信息第5项；释义第2、5节",
+      "excerpt": "有助于降低老年人跌倒风险",
+      "context": "讨论平衡、肌力和耐力锻炼的预防意义；跌倒涉及多种因素。",
+      "applicability": "对这些锻炼类别作一般预防表述；不是任意具体动作的疗效证据。",
+      "exclusions": [
+        "不能证明样例A的坐姿手臂动作能预防跌倒",
+        "不支持七天见效或永不跌倒",
+        "不推出某个人的风险数值或临床效果"
+      ],
+      "allowed_statement": "资料涉及相关锻炼类别的预防意义，没有保证性时间或永久效果；若说的是这套具体动作，本资料库仍不足以核实。",
+      "match_scope": {
+        "kind": "general_principle",
+        "topics": [
+          "general_fall_prevention"
+        ],
+        "actions": []
+      },
+      "checked_at": "2026-09-22",
+      "version": "1"
+    },
+    {
+      "id": "E07",
+      "topic": "活动区域中的地面障碍",
+      "source_title": "预防老年人跌倒健康教育核心信息",
+      "publisher": "国家卫生健康委疾病预防控制局、中国疾控中心慢病中心",
+      "url": "https://ncncd.chinacdc.cn/xzzq/202409/t20240923_311832.htm",
+      "verified_copy_url": null,
+      "source_type": "official_health_education_core_messages",
+      "published_at": "2024-09-23",
+      "content_date": "2021-10-12",
+      "source_last_reviewed_at": null,
+      "locator": "释义第2节环境因素、第9节室内通道",
+      "excerpt": "有障碍物",
+      "context": "地面障碍属于环境风险因素，室内通道应畅通。",
+      "applicability": "选定区域内的疑似障碍，并由用户确认是否处于实际活动位置或进出路线。",
+      "exclusions": [
+        "不是所有入镜物体都算障碍",
+        "不从图片推算准确距离、地面摩擦力",
+        "不推荐老人搬动重物或改造房屋"
+      ],
+      "allowed_statement": "先确认照片中的物品是否挡在本次活动位置或进出路线；对能安全清理的小物品可先移开。具体位置和处理方式是本应用结合输入的建议。",
+      "match_scope": {
+        "kind": "environment_principle",
+        "topics": [
+          "floor_obstacles"
+        ],
+        "actions": []
+      },
+      "checked_at": "2026-09-22",
+      "version": "1"
+    },
+    {
+      "id": "E08",
+      "topic": "当前不适的条件提示",
+      "source_title": "预防老年人跌倒健康教育核心信息",
+      "publisher": "国家卫生健康委疾病预防控制局、中国疾控中心慢病中心",
+      "url": "https://ncncd.chinacdc.cn/xzzq/202409/t20240923_311832.htm",
+      "verified_copy_url": null,
+      "source_type": "official_health_education_core_messages",
+      "published_at": "2024-09-23",
+      "content_date": "2021-10-12",
+      "source_last_reviewed_at": null,
+      "locator": "释义第5节，运动时注意事项",
+      "excerpt": "不要勉强坚持运动",
+      "context": "该提示以身体不适为前提。",
+      "applicability": "用户自述当前有不适，或视频明确鼓励不适时勉强坚持。",
+      "exclusions": [
+        "不判断病因和严重程度",
+        "回答没有不适不能证明适练",
+        "不替代针对具体症状的就诊建议"
+      ],
+      "allowed_statement": "身体不适时不应勉强坚持运动。这是一般提醒，并不表示本应用已确认您有不适或判断了不适原因。",
+      "match_scope": {
+        "kind": "general_principle",
+        "topics": [
+          "current_discomfort"
+        ],
+        "actions": []
+      },
+      "checked_at": "2026-09-22",
+      "version": "2"
+    }
+  ]
+}

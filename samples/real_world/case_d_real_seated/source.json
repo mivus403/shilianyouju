@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1",
+  "kind": "licensed_real_video_composite",
+  "source_title": "An Instructor Showing Elderly Some Exercise Steps While Sitting Down",
+  "source_url": "https://www.pexels.com/video/an-instructor-showing-elderly-some-exercise-steps-while-sitting-down-3196290/",
+  "direct_download_url": "https://videos.pexels.com/video-files/3196290/3196290-hd_1920_1080_25fps.mp4",
+  "creator": "Pressmaster",
+  "license_name": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "downloaded_at": "2026-09-22",
+  "source_sha256": "984F076CFB3662FE79576BC097BD8EB0F679C8877CC3E0CF0F645606C255F7A8",
+  "output_sha256": "7608F60E944F56139D169BF4EA022AAA6947017531F2D0E46C6A4A12A96A8DA6",
+  "modifications": "缩放为1280×720；为覆盖完整旁白循环源画面；添加持续来源/用途标记；移除源音轨；加入本项目自制中文配音的中性剪接；提取三张测试帧。",
+  "people_endorsement": false
+}
+

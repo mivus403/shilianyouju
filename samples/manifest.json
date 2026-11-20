@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.1",
+  "kind": "mixed_development_fixtures",
+  "cases": [
+    {
+      "id": "A",
+      "title": "坐姿活动 · 说法核查",
+      "files": [
+        {
+          "kind": "synthetic_video",
+          "local_path": "case_a_claims/video.mp4",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_a_claims/scene_clear_equipment.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_a_claims/scene_clear_floor.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_a_claims/scene_clear_overview.png",
+          "status": "ready"
+        }
+      ],
+      "source_url": null,
+      "creator": "本项目使用代码绘制原创图形与编写脚本",
+      "permission_basis": "项目自制；不含第三方真人影像或录音。配音使用已安装的Microsoft Huihui Desktop系统语音，未克隆真人。",
+      "modifications": "原创图形动画＋中文合成配音＋嵌入字幕；不是实拍。"
+    },
+    {
+      "id": "B",
+      "title": "椅子坐站 · 条件对照",
+      "files": [
+        {
+          "kind": "synthetic_video",
+          "local_path": "case_b_preparation/video.mp4",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_b_preparation/scene_after_equipment.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_b_preparation/scene_after_floor.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_b_preparation/scene_after_overview.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_b_preparation/scene_before_equipment.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_b_preparation/scene_before_floor.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_b_preparation/scene_before_overview.png",
+          "status": "ready"
+        }
+      ],
+      "source_url": null,
+      "creator": "本项目使用代码绘制原创图形与编写脚本",
+      "permission_basis": "项目自制；不含第三方真人影像或录音。配音使用已安装的Microsoft Huihui Desktop系统语音，未克隆真人。",
+      "modifications": "原创图形动画＋中文合成配音＋嵌入字幕；不是实拍。"
+    },
+    {
+      "id": "C",
+      "title": "扶椅提踵 · 保留未知",
+      "files": [
+        {
+          "kind": "synthetic_video",
+          "local_path": "case_c_unknown/video.mp4",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_c_unknown/scene_unknown_equipment.png",
+          "status": "ready"
+        },
+        {
+          "kind": "synthetic_image",
+          "local_path": "case_c_unknown/scene_unknown_overview.png",
+          "status": "ready"
+        }
+      ],
+      "source_url": null,
+      "creator": "本项目使用代码绘制原创图形与编写脚本",
+      "permission_basis": "项目自制；不含第三方真人影像或录音。配音使用已安装的Microsoft Huihui Desktop系统语音，未克隆真人。",
+      "modifications": "原创图形动画＋中文合成配音＋嵌入字幕；不是实拍。"
+    },
+    {
+      "id": "D",
+      "title": "真人坐姿 · 多人遮挡",
+      "files": [
+        {
+          "kind": "real_video",
+          "local_path": "real_world/case_d_real_seated/video.mp4",
+          "status": "ready"
+        },
+        {
+          "kind": "real_photo",
+          "local_path": "real_world/case_d_real_seated/scene_frame_01.jpg",
+          "status": "ready"
+        },
+        {
+          "kind": "real_photo",
+          "local_path": "real_world/case_d_real_seated/scene_frame_02.jpg",
+          "status": "ready"
+        },
+        {
+          "kind": "real_photo",
+          "local_path": "real_world/case_d_real_seated/scene_frame_03.jpg",
+          "status": "ready"
+        }
+      ],
+      "source_url": "https://www.pexels.com/video/an-instructor-showing-elderly-some-exercise-steps-while-sitting-down-3196290/",
+      "creator": "Pressmaster",
+      "permission_basis": "Pexels License；允许免费使用和修改，不得暗示画面人物背书。",
+      "modifications": "缩放并循环真人画面；移除源音轨；加入持续用途标记及项目自制中性中文旁白；不代表画面人物观点。"
+    },
+    {
+      "id": "E",
+      "title": "真人混合动作 · 背景器材",
+      "files": [
+        {
+          "kind": "real_video",
+          "local_path": "real_world/case_e_real_mixed/video.mp4",
+          "status": "ready"
+        },
+        {
+          "kind": "real_photo",
+          "local_path": "real_world/case_e_real_mixed/scene_frame_01.jpg",
+          "status": "ready"
+        },
+        {
+          "kind": "real_photo",
+          "local_path": "real_world/case_e_real_mixed/scene_frame_02.jpg",
+          "status": "ready"
+        },
+        {
+          "kind": "real_photo",
+          "local_path": "real_world/case_e_real_mixed/scene_frame_03.jpg",
+          "status": "ready"
+        }
+      ],
+      "source_url": "https://www.pexels.com/video/a-woman-fitness-instructor-teaching-the-group-of-elderly-people-some-exercises-fitted-for-them-3196293/",
+      "creator": "Pressmaster",
+      "permission_basis": "Pexels License；允许免费使用和修改，不得暗示画面人物背书。",
+      "modifications": "缩放并循环真人画面；移除源音轨；加入持续用途标记及项目自制案例B中文旁白；不代表画面人物观点。"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "start_seconds": 0.0,
+    "end_seconds": 3.114,
+    "text": "先留意椅子和脚边的区域。",
+    "source": "case_b_preparation B-line-2"
+  },
+  {
+    "start_seconds": 3.664,
+    "end_seconds": 8.941,
+    "text": "器材的实际状态，需要结合自己的场地确认。",
+    "source": "case_c_unknown C-line-4"
+  },
+  {
+    "start_seconds": 9.491,
+    "end_seconds": 14.309,
+    "text": "画面只是动作示意，不是个人运动方案。",
+    "source": "case_b_preparation B-line-5"
+  }
+]
+

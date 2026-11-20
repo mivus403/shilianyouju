@@ -1,0 +1,26 @@
+{
+  "fixture_id": "C",
+  "is_expected_not_model_output": true,
+  "media_kind": "synthetic_schematic",
+  "knowledge_version": "2026-09-22.3",
+  "expected_action": "supported_calf_raise",
+  "claim_expectations": [
+    {
+      "id": "C-line-2",
+      "start_seconds": 7.792,
+      "end_seconds": 12.61,
+      "text": "这套动作连续做三天，就能治好耳鸣。",
+      "expected_status": "insufficient",
+      "expected_evidence_ids": []
+    },
+    {
+      "id": "C-line-3",
+      "start_seconds": 13.16,
+      "end_seconds": 17.988,
+      "text": "有人说越痛越有效，这种说法不要照做。",
+      "expected_stance": "rejected",
+      "must_not_label_as_endorsed": true
+    }
+  ],
+  "important": "预期仅供人工核对，不得作为模型输入或成功输出。"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "case": "A",
+    "duration_seconds": 33.22,
+    "bytes": 409921,
+    "video": "H.264",
+    "audio": "AAC, Chinese system TTS",
+    "decoded": true,
+    "audio_rms": 1464
+  },
+  {
+    "case": "B",
+    "duration_seconds": 27.25,
+    "bytes": 399413,
+    "video": "H.264",
+    "audio": "AAC, Chinese system TTS",
+    "decoded": true,
+    "audio_rms": 1284
+  },
+  {
+    "case": "C",
+    "duration_seconds": 25.37,
+    "bytes": 294983,
+    "video": "H.264",
+    "audio": "AAC, Chinese system TTS",
+    "decoded": true,
+    "audio_rms": 1408
+  }
+]

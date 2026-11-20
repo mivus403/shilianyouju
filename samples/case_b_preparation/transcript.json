@@ -1,0 +1,32 @@
+[
+  {
+    "id": "B-line-1",
+    "start_seconds": 0.6,
+    "end_seconds": 4.173,
+    "text": "这段视频展示椅子坐站转换。"
+  },
+  {
+    "id": "B-line-2",
+    "start_seconds": 4.723,
+    "end_seconds": 7.837,
+    "text": "先留意椅子和脚边的区域。"
+  },
+  {
+    "id": "B-line-3",
+    "start_seconds": 8.387,
+    "end_seconds": 14.114,
+    "text": "对应这类椅子练习，要使用稳固、没有轮子的椅子。"
+  },
+  {
+    "id": "B-line-4",
+    "start_seconds": 14.664,
+    "end_seconds": 20.331,
+    "text": "需要别人帮助起身的观众，请先确认协助安排。"
+  },
+  {
+    "id": "B-line-5",
+    "start_seconds": 20.881,
+    "end_seconds": 25.699,
+    "text": "画面只是动作示意，不是个人运动方案。"
+  }
+]

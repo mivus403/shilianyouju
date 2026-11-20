@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-22",
+  "ffmpeg": "7.1",
+  "cases": [
+    {
+      "id": "D",
+      "path": "case_d_real_seated/video.mp4",
+      "duration_seconds": 14.31,
+      "size_bytes": 1464381,
+      "resolution": "1280x720",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_status": "present",
+      "full_decode": "passed"
+    },
+    {
+      "id": "E",
+      "path": "case_e_real_mixed/video.mp4",
+      "duration_seconds": 28.12,
+      "size_bytes": 3022556,
+      "resolution": "1280x720",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_status": "present",
+      "full_decode": "passed"
+    }
+  ]
+}
+

@@ -1,0 +1,399 @@
+{
+ "id": "A",
+ "title": "案例 A · 坐姿活动：夸大保证的说法",
+ "tagline": "同一段视频里，哪些说法有依据，哪些与资料冲突，哪些只能说资料不足",
+ "video_file": "case_a_claims/video.mp4",
+ "recorded_with": [
+  "qwen3.8-omni-flash"
+ ],
+ "knowledge_version": "2026-09-22.3",
+ "video_run": {
+  "result": {
+   "schema_version": "0.1",
+   "analysis_id": "video-ab731c85ebce",
+   "revision": 1,
+   "video_id": "task7-A",
+   "duration_seconds": 33.22,
+   "audio_status": "present",
+   "status": "complete",
+   "unprocessed_ranges": [],
+   "actions": [
+    {
+     "start_seconds": 0.0,
+     "end_seconds": 32.84,
+     "type": "seated_arm_movement",
+     "description": "一名简笔人物坐在棕色靠背椅上，反复做坐姿手臂活动：双臂向身体两侧平举后向上抬起至斜上方，再放回平举位置；画面左侧有窗户，右侧有一张浅绿色沙发。",
+     "equipment": [
+      "chair"
+     ],
+     "recognition": "clear",
+     "scope": "supported",
+     "id": "action-1"
+    }
+   ],
+   "claims": [
+    {
+     "start_seconds": 1.6,
+     "end_seconds": 4.48,
+     "text": "画面展示的是坐姿手臂活动。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-1",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 5.12,
+     "end_seconds": 11.72,
+     "text": "这套动作所有老人都可以照着做，不需要考虑身体差别。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-2",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 12.0,
+     "end_seconds": 21.0,
+     "text": "运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。",
+     "text_kind": "quote",
+     "channel": "speech",
+     "stance": "endorsed",
+     "recognition": "uncertain",
+     "id": "claim-3",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 12.0,
+     "end_seconds": 21.0,
+     "text": "本段保留中文语音，不显示逐字字幕。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-4",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 21.84,
+     "end_seconds": 25.84,
+     "text": "坚持七天，就能保证以后再也不跌倒。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-5",
+     "corrected_text": null
+    },
+    {
+     "start_seconds": 26.8,
+     "end_seconds": 31.84,
+     "text": "第一天就应该尽量增加次数，做得越多越好。",
+     "text_kind": "quote",
+     "channel": "caption",
+     "stance": "endorsed",
+     "recognition": "clear",
+     "id": "claim-6",
+     "corrected_text": null
+    }
+   ],
+   "cautions": [],
+   "uncertainties": [
+    "顶部标题下方的小字说明在部分画面中不够清晰，未能稳定逐字确认。",
+    "12秒至21秒区间仅能确认存在中文语音且未显示逐字字幕，但具体语音内容无法可靠转写。"
+   ]
+  },
+  "raw_responses": [
+   {
+    "label": "视频 1/1（原视频 0.0 秒起）",
+    "original_start_seconds": 0.0,
+    "json_repaired": false,
+    "normalizations": [],
+    "text": "{\"actions\":[{\"start_seconds\":0.0,\"end_seconds\":32.84,\"type\":\"seated_arm_movement\",\"description\":\"一名简笔人物坐在棕色靠背椅上，反复做坐姿手臂活动：双臂向身体两侧平举后向上抬起至斜上方，再放回平举位置；画面左侧有窗户，右侧有一张浅绿色沙发。\",\"equipment\":[\"chair\"],\"recognition\":\"clear\",\"scope\":\"supported\"}],\"claims\":[{\"start_seconds\":1.6,\"end_seconds\":4.48,\"text\":\"画面展示的是坐姿手臂活动。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":5.12,\"end_seconds\":11.72,\"text\":\"这套动作所有老人都可以照着做，不需要考虑身体差别。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":12.0,\"end_seconds\":21.0,\"text\":\"运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。\",\"text_kind\":\"quote\",\"channel\":\"speech\",\"stance\":\"endorsed\",\"recognition\":\"uncertain\"},{\"start_seconds\":12.0,\"end_seconds\":21.0,\"text\":\"本段保留中文语音，不显示逐字字幕。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":21.84,\"end_seconds\":25.84,\"text\":\"坚持七天，就能保证以后再也不跌倒。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"stance\":\"endorsed\",\"recognition\":\"clear\"},{\"start_seconds\":26.8,\"end_seconds\":31.84,\"text\":\"第一天就应该尽量增加次数，做得越多越好。\",\"text_kind\":\"quote\",\"channel\":\"caption\",\"stance\":\"endorsed\",\"recognition\":\"clear\"}],\"cautions\":[],\"uncertainties\":[\"顶部标题下方的小字说明在部分画面中不够清晰，未能稳定逐字确认。\",\"12秒至21秒区间仅能确认存在中文语音且未显示逐字字幕，但具体语音内容无法可靠转写。\"]}"
+   }
+  ],
+  "requests": [
+   {
+    "label": "视频 1/1（原视频 0.0 秒起）",
+    "elapsed_seconds": 10.190188299980946,
+    "request_id": "chatcmpl-2b8b335b-e91a-928f-81a7-999ccd21b2db",
+    "response_model": "qwen3.8-omni-flash",
+    "usage": {
+     "prompt_tokens": 17689,
+     "total_tokens": 18147,
+     "completion_tokens": 458,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 233,
+      "video_tokens": 16832,
+      "text_tokens": 624
+     },
+     "completion_tokens_details": {
+      "text_tokens": 458
+     }
+    }
+   }
+  ]
+ },
+ "claim_run": {
+  "result": {
+   "schema_version": "0.1",
+   "analysis_id": "claim-check-9c6200ffc209",
+   "revision": 1,
+   "video_analysis_id": "video-ab731c85ebce",
+   "knowledge_version": "2026-09-22.3",
+   "status": "complete",
+   "cards": [
+    {
+     "id": "claim-card-e5baaf5cf09b",
+     "revision": 1,
+     "category": "claim",
+     "status": "conflicts",
+     "title": "这项表述与资料要求冲突",
+     "checked_statement": "这套动作所有老人都可以照着做，不需要考虑身体差别。",
+     "fact_refs": [
+      "claim-2"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [
+      "E03"
+     ],
+     "explanation": "视频声称所有老人无需考虑身体差别即可照做；E03要求活动和强度与个人条件相匹配，明确排除无条件人人照做的说法。",
+     "suggested_action": "这则资料要求活动和强度与个人条件相匹配；不能由一般运动建议推出所有人都能照做，也不能由这张卡判断个人能否跟练。",
+     "remaining_unknowns": [],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-5b87415669ff",
+     "revision": 1,
+     "category": "claim",
+     "status": "recognition_needed",
+     "title": "先确认原话或上下文",
+     "checked_statement": "运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。",
+     "fact_refs": [
+      "claim-3"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [],
+     "explanation": "原话、否定范围或说话者立场尚未可靠确认，本次不对这项说法作科学判断。",
+     "suggested_action": "先回看相关片段并更正原话、立场或动作关联，再重新核查。",
+     "remaining_unknowns": [
+      "语音识别不确定，原话内容待确认"
+     ],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-c547062f6c95",
+     "revision": 1,
+     "category": "claim",
+     "status": "insufficient",
+     "title": "当前资料不足",
+     "checked_statement": "坚持七天，就能保证以后再也不跌倒。",
+     "fact_refs": [
+      "claim-5"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [],
+     "explanation": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+     "suggested_action": "当前资料库不足以核实这项说法；这不等于已确认它正确或错误。",
+     "remaining_unknowns": [
+      "E06 只支持一般跌倒预防表述，不能用于具体动作或疾病疗效"
+     ],
+     "handling_state": "open"
+    },
+    {
+     "id": "claim-card-aaf2d5560fee",
+     "revision": 1,
+     "category": "claim",
+     "status": "conflicts",
+     "title": "这项表述与资料要求冲突",
+     "checked_statement": "第一天就应该尽量增加次数，做得越多越好。",
+     "fact_refs": [
+      "claim-6"
+     ],
+     "action_ids": [
+      "action-1"
+     ],
+     "evidence_ids": [
+      "E02"
+     ],
+     "explanation": "视频要求第一天尽量加量、越多越好；E02指出科学运动重在适度循序渐进，明确排除无条件第一天尽量加量的主张。",
+     "suggested_action": "不能把第一天尽量加量、越多越好作为一般原则；应按自身情况逐步增加。资料不能据此确定您的具体训练量。",
+     "remaining_unknowns": [],
+     "handling_state": "open"
+    }
+   ],
+   "context_items": [
+    {
+     "candidate_id": "candidate-a2f10c284a6c",
+     "checked_statement": "画面展示的是坐姿手臂活动。",
+     "fact_refs": [
+      "claim-1"
+     ],
+     "disposition": "not_health_claim",
+     "explanation": "纯画面内容描述，不涉及健康主张。"
+    },
+    {
+     "candidate_id": "candidate-6eb83fcd1a42",
+     "checked_statement": "本段保留中文语音，不显示逐字字幕。",
+     "fact_refs": [
+      "claim-4"
+     ],
+     "disposition": "not_health_claim",
+     "explanation": "视频制作格式说明，不涉及健康主张。"
+    }
+   ],
+   "coverage_notes": [
+    "顶部标题下方的小字说明在部分画面中不够清晰，未能稳定逐字确认。",
+    "12秒至21秒区间仅能确认存在中文语音且未显示逐字字幕，但具体语音内容无法可靠转写。",
+    "视频提取状态 complete 只表示请求和结构处理完整，不证明语音与画面内容全部识别。"
+   ],
+   "validation_notes": [
+    "candidate-c547062f6c95：已移除不适用引用；E06 只支持一般跌倒预防表述，不能用于具体动作或疾病疗效",
+    "candidate-c547062f6c95 的确定性结论缺少适用资料，已降为 insufficient",
+    "模型生成的覆盖总结只保留在原始回复中，未作为系统覆盖结论。"
+   ]
+  },
+  "candidates": [
+   {
+    "candidate_id": "candidate-a2f10c284a6c",
+    "checked_statement": "画面展示的是坐姿手臂活动。",
+    "fact_refs": [
+     "claim-1"
+    ],
+    "source_kind": "claim",
+    "channel": "caption",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 1.6,
+    "end_seconds": 4.48,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-e5baaf5cf09b",
+    "checked_statement": "这套动作所有老人都可以照着做，不需要考虑身体差别。",
+    "fact_refs": [
+     "claim-2"
+    ],
+    "source_kind": "claim",
+    "channel": "caption",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 5.12,
+    "end_seconds": 11.72,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-5b87415669ff",
+    "checked_statement": "运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。",
+    "fact_refs": [
+     "claim-3"
+    ],
+    "source_kind": "claim",
+    "channel": "speech",
+    "stance": "endorsed",
+    "recognition": "uncertain",
+    "start_seconds": 12.0,
+    "end_seconds": 21.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-6eb83fcd1a42",
+    "checked_statement": "本段保留中文语音，不显示逐字字幕。",
+    "fact_refs": [
+     "claim-4"
+    ],
+    "source_kind": "claim",
+    "channel": "caption",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 12.0,
+    "end_seconds": 21.0,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-c547062f6c95",
+    "checked_statement": "坚持七天，就能保证以后再也不跌倒。",
+    "fact_refs": [
+     "claim-5"
+    ],
+    "source_kind": "claim",
+    "channel": "caption",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 21.84,
+    "end_seconds": 25.84,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   },
+   {
+    "candidate_id": "candidate-aaf2d5560fee",
+    "checked_statement": "第一天就应该尽量增加次数，做得越多越好。",
+    "fact_refs": [
+     "claim-6"
+    ],
+    "source_kind": "claim",
+    "channel": "caption",
+    "stance": "endorsed",
+    "recognition": "clear",
+    "start_seconds": 26.8,
+    "end_seconds": 31.84,
+    "action_ids": [
+     "action-1"
+    ],
+    "review_version": 0
+   }
+  ],
+  "raw_responses": [
+   {
+    "label": "主张与资料对照",
+    "json_repaired": false,
+    "text": "{\"assessments\":[{\"candidate_id\":\"candidate-a2f10c284a6c\",\"checked_statement\":\"画面展示的是坐姿手臂活动。\",\"fact_refs\":[\"claim-1\"],\"action_ids\":[\"action-1\"],\"disposition\":\"not_health_claim\",\"claim_scope\":\"unclear\",\"topics\":[],\"status\":null,\"explanation\":\"纯画面内容描述，不涉及健康主张。\",\"evidence_ids\":[],\"uncertainties\":[]},{\"candidate_id\":\"candidate-e5baaf5cf09b\",\"checked_statement\":\"这套动作所有老人都可以照着做，不需要考虑身体差别。\",\"fact_refs\":[\"claim-2\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"general_principle\",\"topics\":[\"universal_suitability\"],\"status\":\"conflicts\",\"explanation\":\"视频声称所有老人无需考虑身体差别即可照做；E03要求活动和强度与个人条件相匹配，明确排除无条件人人照做的说法。\",\"evidence_ids\":[\"E03\"],\"uncertainties\":[]},{\"candidate_id\":\"candidate-5b87415669ff\",\"checked_statement\":\"运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。\",\"fact_refs\":[\"claim-3\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"general_principle\",\"topics\":[\"persistent_discomfort\"],\"status\":\"recognition_needed\",\"explanation\":\"该条来自语音通道且识别状态为uncertain，原话可靠性不足，需回看确认后再核对。\",\"evidence_ids\":[],\"uncertainties\":[\"语音识别不确定，原话内容待确认\"]},{\"candidate_id\":\"candidate-6eb83fcd1a42\",\"checked_statement\":\"本段保留中文语音，不显示逐字字幕。\",\"fact_refs\":[\"claim-4\"],\"action_ids\":[\"action-1\"],\"disposition\":\"not_health_claim\",\"claim_scope\":\"unclear\",\"topics\":[],\"status\":null,\"explanation\":\"视频制作格式说明，不涉及健康主张。\",\"evidence_ids\":[],\"uncertainties\":[]},{\"candidate_id\":\"candidate-c547062f6c95\",\"checked_statement\":\"坚持七天，就能保证以后再也不跌倒。\",\"fact_refs\":[\"claim-5\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"action_specific\",\"topics\":[\"general_fall_prevention\"],\"status\":\"conflicts\",\"explanation\":\"视频将具体坐姿手臂动作与七天见效、永不跌倒的保证挂钩；E06仅涉及一般锻炼类别的预防意义，明确排除七天见效或永不跌倒，且不能证明该具体动作预防跌倒。\",\"evidence_ids\":[\"E06\"],\"uncertainties\":[]},{\"candidate_id\":\"candidate-aaf2d5560fee\",\"checked_statement\":\"第一天就应该尽量增加次数，做得越多越好。\",\"fact_refs\":[\"claim-6\"],\"action_ids\":[\"action-1\"],\"disposition\":\"review\",\"claim_scope\":\"general_principle\",\"topics\":[\"unlimited_training_volume\"],\"status\":\"conflicts\",\"explanation\":\"视频要求第一天尽量加量、越多越好；E02指出科学运动重在适度循序渐进，明确排除无条件第一天尽量加量的主张。\",\"evidence_ids\":[\"E02\"],\"uncertainties\":[]}],\"coverage_notes\":[\"candidate-5b87415669ff因语音识别不确定尚未完成实质核对，确认原话后需重新评估其与E01、E08的关系\"]}"
+   }
+  ],
+  "requests": [
+   {
+    "label": "主张与资料对照",
+    "elapsed_seconds": 54.69703699997626,
+    "request_id": "chatcmpl-f44a1e49-fad5-927b-87b5-447ebb2e2ace",
+    "response_model": "qwen3.8-omni-flash",
+    "usage": {
+     "prompt_tokens": 2969,
+     "total_tokens": 5524,
+     "completion_tokens": 2555,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 2969
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 1838,
+      "text_tokens": 717
+     }
+    }
+   }
+  ]
+ },
+ "scenes": []
+}

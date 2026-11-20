@@ -1,0 +1,44 @@
+{
+  "fixture_id": "A",
+  "is_expected_not_model_output": true,
+  "media_kind": "synthetic_schematic",
+  "knowledge_version": "2026-09-22.3",
+  "expected_action": "seated_arm_movement",
+  "claim_expectations": [
+    {
+      "id": "A-line-2",
+      "start_seconds": 4.728,
+      "end_seconds": 11.01,
+      "text": "这套动作所有老人都可以照着做，不需要考虑身体差别。",
+      "expected_status": "conflicts",
+      "expected_evidence_ids": ["E03"],
+      "reason": "原话明确否定考虑个人差别，与活动及强度需匹配个人条件的要求冲突。"
+    },
+    {
+      "id": "A-line-3",
+      "start_seconds": 11.56,
+      "end_seconds": 20.567,
+      "text": "运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。",
+      "expected_status": "conflicts",
+      "expected_evidence_ids": ["E01"]
+    },
+    {
+      "id": "A-line-4",
+      "start_seconds": 21.117,
+      "end_seconds": 25.86,
+      "text": "坚持七天，就能保证以后再也不跌倒。",
+      "expected_status": "insufficient",
+      "expected_evidence_ids": [],
+      "reason": "E06只是一般锻炼类别的跌倒预防信息，没有证明这套坐姿手臂动作的作用；不能先假定弱版本成立再判超出依据。"
+    },
+    {
+      "id": "A-line-5",
+      "start_seconds": 26.41,
+      "end_seconds": 31.672,
+      "text": "第一天就应该尽量增加次数，做得越多越好。",
+      "expected_status": "conflicts",
+      "expected_evidence_ids": ["E02"]
+    }
+  ],
+  "important": "预期仅供人工核对，不得作为模型输入或成功输出。"
+}

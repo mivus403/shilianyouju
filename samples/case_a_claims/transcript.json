@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A-line-1",
+    "start_seconds": 0.6,
+    "end_seconds": 4.178,
+    "text": "画面展示的是坐姿手臂活动。"
+  },
+  {
+    "id": "A-line-2",
+    "start_seconds": 4.728,
+    "end_seconds": 11.01,
+    "text": "这套动作所有老人都可以照着做，不需要考虑身体差别。"
+  },
+  {
+    "id": "A-line-3",
+    "start_seconds": 11.56,
+    "end_seconds": 20.567,
+    "text": "运动后即使关节持续肿胀，休息一天还没缓解，也要继续坚持，越疼越有效。"
+  },
+  {
+    "id": "A-line-4",
+    "start_seconds": 21.117,
+    "end_seconds": 25.86,
+    "text": "坚持七天，就能保证以后再也不跌倒。"
+  },
+  {
+    "id": "A-line-5",
+    "start_seconds": 26.41,
+    "end_seconds": 31.672,
+    "text": "第一天就应该尽量增加次数，做得越多越好。"
+  }
+]
